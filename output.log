@@ -9,92 +9,122 @@ Starting remote discovery
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
  * Debug mode: off
+[{'success': {'/config/name': 'DiyHue Bridge'}},
+ {'success': {'/config/swversion': '1949203030'}},
+ {'success': {'/config/apiversion': '1.46.0'}},
+ {'success': {'/config/timezone': 'Europe/London'}},
+ {'success': {'/config/Remote API enabled': False}}]
 {'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
 {'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
 {'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
-{'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
-{'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
-{'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
-[{'success': {'/config/linkbutton': {'lastlinkbuttonpushed': 1643272368}}}]
-{'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
-[{'success': {'clientkey': '440FAC6DA9864F06A943BAE3C59524BE',
-              'username': 'hueess647f4b11ec85c1b827ebf38830'}}]
+{'devicetype': 'Hue#Mi 9 SE', 'generateclientkey': True}
+{'devicetype': 'Hue#Mi 9 SE', 'generateclientkey': True}
+{'devicetype': 'Hue#Mi 9 SE', 'generateclientkey': True}
+[{'success': {'/config/linkbutton': {'lastlinkbuttonpushed': 1643273519}}}]
+{'devicetype': 'Hue#Mi 9 SE', 'generateclientkey': True}
+[{'success': {'clientkey': '07678110C2824D648057FA9369DB3C8F',
+              'username': '63a5d0067f4e11ec8ef6b827ebf38830'}}]
 scan for light
+[{'creationtime': '2022-01-27T08:52:28Z',
+  'data': [{'color': {'xy': {'x': 0.5190164318641401,
+                             'y': 0.25253947978756586}},
+            'id': 'b65fe889-548a-4dcf-976f-a0298f323033',
+            'on': {'on': True},
+            'type': 'light'}],
+  'id': '3ae2aa1f-7820-4f18-847b-ba52a1b4da81',
+  'id_v1': '/lights/1',
+  'type': 'update'}]
 {'alert': 'select'}
 [{'success': {'/lights/1/state/alert': 'select'}}]
-{'alert': 'select'}
-[{'success': {'/lights/1/state/alert': 'select'}}]
-{'on': True}
-[{'success': {'/lights/1/state/on': True}}]
-{'xy': [0.5065495042635371, 0.3573159356783389]}
-[{'success': {'/lights/1/state/xy': [0.5065495042635371, 0.3573159356783389]}}]
-{'xy': [0.5085132386117343, 0.3570072265168279]}
-[{'success': {'/lights/1/state/xy': [0.5085132386117343, 0.3570072265168279]}}]
-{'xy': [0.512016498598384, 0.2932732129255688]}
-[{'success': {'/lights/1/state/xy': [0.512016498598384, 0.2932732129255688]}}]
-{'xy': [0.47324430449228544, 0.24310995954488662]}
-[{'success': {'/lights/1/state/xy': [0.47324430449228544,
-                                     0.24310995954488662]}}]
-{'xy': [0.47584440723664295, 0.2387565205834075]}
-[{'success': {'/lights/1/state/xy': [0.47584440723664295, 0.2387565205834075]}}]
-{'xy': [0.4727451953792625, 0.2341762667932796]}
-[{'success': {'/lights/1/state/xy': [0.4727451953792625, 0.2341762667932796]}}]
-{'xy': [0.3755468249698397, 0.19361459969781702]}
-[{'success': {'/lights/1/state/xy': [0.3755468249698397, 0.19361459969781702]}}]
-{'xy': [0.24722233190763238, 0.122639634694777]}
-[{'success': {'/lights/1/state/xy': [0.24722233190763238, 0.122639634694777]}}]
-{'xy': [0.19197457278395175, 0.08195051027426128]}
-[{'success': {'/lights/1/state/xy': [0.19197457278395175,
-                                     0.08195051027426128]}}]
-{'xy': [0.15929704505363237, 0.07048025685084035]}
-[{'success': {'/lights/1/state/xy': [0.15929704505363237,
-                                     0.07048025685084035]}}]
-{'xy': [0.17195075958702127, 0.23634681491797827]}
-[{'success': {'/lights/1/state/xy': [0.17195075958702127,
-                                     0.23634681491797827]}}]
-{'xy': [0.17323017521316617, 0.34227390187964196]}
-[{'success': {'/lights/1/state/xy': [0.17323017521316617,
-                                     0.34227390187964196]}}]
-{'xy': [0.17692921066729633, 0.4204922718484817]}
-[{'success': {'/lights/1/state/xy': [0.17692921066729633, 0.4204922718484817]}}]
-{'xy': [0.1773213024752456, 0.45678072713599693]}
-[{'success': {'/lights/1/state/xy': [0.1773213024752456, 0.45678072713599693]}}]
-{'xy': [0.1788322685436967, 0.46027790415444286]}
-[{'success': {'/lights/1/state/xy': [0.1788322685436967, 0.46027790415444286]}}]
-{'xy': [0.18784655547074175, 0.3653497456684962]}
-[{'success': {'/lights/1/state/xy': [0.18784655547074175, 0.3653497456684962]}}]
-{'xy': [0.18025303765011158, 0.2157254401236836]}
-[{'success': {'/lights/1/state/xy': [0.18025303765011158, 0.2157254401236836]}}]
-{'xy': [0.16079067074957284, 0.11608113609740592]}
-[{'success': {'/lights/1/state/xy': [0.16079067074957284,
-                                     0.11608113609740592]}}]
-{'xy': [0.15736037949102516, 0.09526768156998933]}
-[{'success': {'/lights/1/state/xy': [0.15736037949102516,
-                                     0.09526768156998933]}}]
-{'xy': [0.22945329824120472, 0.5737097230657032]}
-[{'success': {'/lights/1/state/xy': [0.22945329824120472, 0.5737097230657032]}}]
-{'xy': [0.369836322057869, 0.22712530528639718]}
-[{'success': {'/lights/1/state/xy': [0.369836322057869, 0.22712530528639718]}}]
-{'xy': [0.1924026594218718, 0.10127911121902407]}
-[{'success': {'/lights/1/state/xy': [0.1924026594218718, 0.10127911121902407]}}]
-{'xy': [0.42866359403950743, 0.48202440707810795]}
-[{'success': {'/lights/1/state/xy': [0.42866359403950743,
-                                     0.48202440707810795]}}]
-{'on': False}
-[{'success': {'/groups/0/action/on': False}}]
-{'on': True}
-[{'success': {'/groups/0/action/on': True}}]
-{'on': True}
-[{'success': {'/groups/0/action/on': True}}]
-{'xy': [0.5553493916759737, 0.3692466633735099]}
-[{'success': {'/lights/1/state/xy': [0.5553493916759737, 0.3692466633735099]}}]
-{'xy': [0.5754066837201229, 0.3480078876616303]}
-[{'success': {'/lights/1/state/xy': [0.5754066837201229, 0.3480078876616303]}}]
-{'xy': [0.611999012645731, 0.32101156104004497]}
-[{'success': {'/lights/1/state/xy': [0.611999012645731, 0.32101156104004497]}}]
-{'xy': [0.6411925896704592, 0.2958055977387048]}
-[{'success': {'/lights/1/state/xy': [0.6411925896704592, 0.2958055977387048]}}]
-{'xy': [0.5925811385976306, 0.26004284978735437]}
-[{'success': {'/lights/1/state/xy': [0.5925811385976306, 0.26004284978735437]}}]
-{'xy': [0.5920773850741176, 0.2597998517982757]}
-[{'success': {'/lights/1/state/xy': [0.5920773850741176, 0.2597998517982757]}}]
+{'name': 'Yeelight colorc .41'}
+[{'success': {'/lights/1/name': 'Yeelight colorc .41'}}]
+{'archetype': 'sultanbulb'}
+[{'success': {'/lights/1/config/archetype': 'sultanbulb'}}]
+[{'creationtime': '2022-01-27T08:52:36Z',
+  'data': [{'color': {'xy': {'x': 0.5190164371798149, 'y': 0.2525394788868266}},
+            'id': 'b65fe889-548a-4dcf-976f-a0298f323033',
+            'on': {'on': True},
+            'type': 'light'}],
+  'id': 'b8096e21-c35f-4e05-be29-2dd9ff7727e7',
+  'id_v1': '/lights/1',
+  'type': 'update'}]
+[{'creationtime': '2022-01-27T08:52:36Z',
+  'data': [{'color': {'xy': {'x': 0.5190164371798149, 'y': 0.2525394788868266}},
+            'id': 'b65fe889-548a-4dcf-976f-a0298f323033',
+            'on': {'on': True},
+            'type': 'light'}],
+  'id': 'b8096e21-c35f-4e05-be29-2dd9ff7727e7',
+  'id_v1': '/lights/1',
+  'type': 'update'},
+ {'creationtime': '2022-01-27T08:52:37Z',
+  'data': [{'color': {'xy': {'x': 0.5261858231796396, 'y': 0.2655967424866813}},
+            'id': 'b65fe889-548a-4dcf-976f-a0298f323033',
+            'on': {'on': True},
+            'type': 'light'}],
+  'id': '7e854b72-2ea9-4232-817b-0d03bd907c6f',
+  'id_v1': '/lights/1',
+  'type': 'update'}]
+[{'creationtime': '2022-01-27T08:52:37Z',
+  'data': [{'color': {'xy': {'x': 0.5430131890713266, 'y': 0.3316314406784765}},
+            'id': 'b65fe889-548a-4dcf-976f-a0298f323033',
+            'on': {'on': True},
+            'type': 'light'}],
+  'id': '6bb774f7-79b6-47f8-a1b9-100fd54feaf5',
+  'id_v1': '/lights/1',
+  'type': 'update'}]
+[{'creationtime': '2022-01-27T08:52:37Z',
+  'data': [{'color': {'xy': {'x': 0.5430131890713266, 'y': 0.3316314406784765}},
+            'id': 'b65fe889-548a-4dcf-976f-a0298f323033',
+            'on': {'on': True},
+            'type': 'light'}],
+  'id': '6bb774f7-79b6-47f8-a1b9-100fd54feaf5',
+  'id_v1': '/lights/1',
+  'type': 'update'},
+ {'creationtime': '2022-01-27T08:52:37Z',
+  'data': [{'color': {'xy': {'x': 0.5426973206346275,
+                             'y': 0.34201303043029524}},
+            'id': 'b65fe889-548a-4dcf-976f-a0298f323033',
+            'on': {'on': True},
+            'type': 'light'}],
+  'id': 'd2ab25de-3c2c-4b64-95bd-5d8650e6d2cc',
+  'id_v1': '/lights/1',
+  'type': 'update'}]
+{'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
+{'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
+{'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
+[{'success': {'/config/linkbutton': {'lastlinkbuttonpushed': 1643273578}}}]
+{'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
+[{'success': {'clientkey': '30D1417726334E19863702C7F4C65D3B',
+              'username': 'hueesse47f4e11ecbf36b827ebf38830'}}]
+{'xy': [0.538871092909142, 0.3342471418201197]}
+[{'success': {'/lights/1/state/xy': [0.538871092909142, 0.3342471418201197]}}]
+{'xy': [0.5802921359790991, 0.31441285280001746]}
+[{'success': {'/lights/1/state/xy': [0.5802921359790991, 0.31441285280001746]}}]
+{'xy': [0.6037736110559155, 0.2791602633680685]}
+[{'success': {'/lights/1/state/xy': [0.6037736110559155, 0.2791602633680685]}}]
+{'xy': [0.5952599558181881, 0.2684406725880562]}
+[{'success': {'/lights/1/state/xy': [0.5952599558181881, 0.2684406725880562]}}]
+{'xy': [0.5930183744712558, 0.2686368077795828]}
+[{'success': {'/lights/1/state/xy': [0.5930183744712558, 0.2686368077795828]}}]
+{'xy': [0.40975396972668154, 0.2297739719245427]}
+[{'success': {'/lights/1/state/xy': [0.40975396972668154, 0.2297739719245427]}}]
+{'xy': [0.40614265299022284, 0.2272734443386942]}
+[{'success': {'/lights/1/state/xy': [0.40614265299022284, 0.2272734443386942]}}]
+{'xy': [0.362869617181715, 0.198781596638264]}
+[{'success': {'/lights/1/state/xy': [0.362869617181715, 0.198781596638264]}}]
+{'xy': [0.26115373788441726, 0.13839734746433155]}
+[{'success': {'/lights/1/state/xy': [0.26115373788441726,
+                                     0.13839734746433155]}}]
+{'xy': [0.24649078056008283, 0.12874344619571346]}
+[{'success': {'/lights/1/state/xy': [0.24649078056008283,
+                                     0.12874344619571346]}}]
+{'xy': [0.24985025859492388, 0.133390477706407]}
+[{'success': {'/lights/1/state/xy': [0.24985025859492388, 0.133390477706407]}}]
+{'ct': 260}
+[{'success': {'/lights/1/state/ct': 260}}]
+{'ct': 235}
+[{'success': {'/lights/1/state/ct': 235}}]
+{'ct': 220}
+[{'success': {'/lights/1/state/ct': 220}}]
+{'ct': 220}
+[{'success': {'/lights/1/state/ct': 220}}]
