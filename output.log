@@ -1,130 +1,407 @@
+2022-01-27 09:06:25,668 - configManager.argumentHandler - INFO - Using Host 192.168.1.23:80
+2022-01-27 09:06:25,669 - configManager.argumentHandler - INFO - Host MAC given as b827ebf38830
+2022-01-27 09:06:25,670 - configManager.argumentHandler - INFO - IP range for light discovery: 0-255
+2022-01-27 09:06:25,670 - configManager.argumentHandler - INFO - Deconz IP given as 127.0.0.1
+2022-01-27 09:06:25,671 - configManager.argumentHandler - INFO - Online Discovery/Remote API Enabled!
+2022-01-27 09:06:25,680 - configManager.argumentHandler - INFO - Using Host 192.168.1.23:80
+2022-01-27 09:06:25,681 - configManager.argumentHandler - INFO - Host MAC given as b827ebf38830
+2022-01-27 09:06:25,681 - configManager.argumentHandler - INFO - IP range for light discovery: 0-255
+2022-01-27 09:06:25,682 - configManager.argumentHandler - INFO - Deconz IP given as 127.0.0.1
+2022-01-27 09:06:25,682 - configManager.argumentHandler - INFO - Online Discovery/Remote API Enabled!
+2022-01-27 09:06:25,682 - configManager.argumentHandler - INFO - Debug logging enabled!
+2022-01-27 09:06:25,683 - configManager.argumentHandler - INFO - Generating certificate
+Generating an EC private key
+writing new private key to 'private.key'
+-----
+touch: setting times of '/opt/hue-emulator/config/cert.pem': Operation not permitted
+2022-01-27 09:06:25,796 - configManager.argumentHandler - INFO - Certificate created
+2022-01-27 09:06:25,799 - configManager.configHandler - INFO - Config loaded
+2022-01-27 09:06:26,191 - functions.daylightSensor - DEBUG - Daylight Sensor: location is not configured
 Starting remote discovery
+2022-01-27 09:06:26,195 - services.stateFetch - INFO - start lights sync
+2022-01-27 09:06:26,202 - services.ssdp - INFO - starting ssdp...
+2022-01-27 09:06:26,203 - services.ssdp - INFO - start ssdp broadcast
+2022-01-27 09:06:26,205 - services.mdns - INFO - <MDNS> listener started
+2022-01-27 09:06:26,214 - services.eventStreamer - DEBUG - {'creationtime': '2022-01-27T09:06:25Z', 'data': [{'children': [], 'grouped_services': [{'rid': '41d19334-c7ad-4d8c-90dc-87ed0fb0d9ea', 'rtype': 'grouped_light'}], 'services': [{'rid': '41d19334-c7ad-4d8c-90dc-87ed0fb0d9ea', 'rtype': 'grouped_light'}], 'id': '03badcaf-99af-524e-bcd6-16e4b06c9532', 'id_v1': '/groups/0', 'metadata': {'archetype': 'other', 'name': 'Group 0'}, 'type': 'zone'}], 'id': '2242a2d2-c577-4aa5-82e5-1d7bf95b5a4b', 'type': 'add'}
  * Serving Flask app "HueEmulator3" (lazy loading)
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
  * Debug mode: off
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
  * Serving Flask app "HueEmulator3" (lazy loading)
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
  * Debug mode: off
-[{'success': {'/config/name': 'DiyHue Bridge'}},
- {'success': {'/config/swversion': '1949203030'}},
- {'success': {'/config/apiversion': '1.46.0'}},
- {'success': {'/config/timezone': 'Europe/London'}},
- {'success': {'/config/Remote API enabled': False}}]
+ * Running on https://0.0.0.0:443/ (Press CTRL+C to quit)
+192.168.1.11 - - [27/Jan/2022 09:06:28] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:06:29] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:06:30] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:06:31] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:06:33] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:06:35] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:06:35] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:06:37] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:06:39] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:06:40] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:06:41] "[37mGET /lights HTTP/1.1[0m" 200 -
+2022-01-27 09:06:41,574 - services.ssdp - DEBUG - Sending M-Search response to 192.168.1.11
+2022-01-27 09:06:42,397 - services.ssdp - DEBUG - Sending M-Search response to 192.168.1.11
+192.168.1.11 - - [27/Jan/2022 09:06:43] "[37mGET /lights HTTP/1.1[0m" 200 -
+2022-01-27 09:06:43,719 - services.ssdp - DEBUG - Sending M-Search response to 192.168.1.11
+2022-01-27 09:06:44,140 - services.ssdp - DEBUG - Sending M-Search response to 192.168.1.11
+192.168.1.11 - - [27/Jan/2022 09:06:45] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:06:45] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:06:47] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:06:49] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:06:50] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:06:51] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:06:54] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:06:55] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:06:55] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:06:57] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:00] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:00] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:01] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:03] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:06] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:06] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:07] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:09] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:10] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:11] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:13] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:15] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:15] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:17] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:19] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:20] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:21] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:23] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:25] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:25] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:27] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:30] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:30] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:31] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:33] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:35] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:35] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:37] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:39] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:40] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:41] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:43] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:45] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:45] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:48] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:49] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:50] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+2022-01-27 09:07:51,408 - services.ssdp - DEBUG - Sending M-Search response to 192.168.1.18
+192.168.1.11 - - [27/Jan/2022 09:07:51] "[37mGET /lights HTTP/1.1[0m" 200 -
+2022-01-27 09:07:52,231 - services.ssdp - DEBUG - Sending M-Search response to 192.168.1.18
+2022-01-27 09:07:53,352 - services.ssdp - DEBUG - Sending M-Search response to 192.168.1.18
+192.168.1.11 - - [27/Jan/2022 09:07:53] "[37mGET /lights HTTP/1.1[0m" 200 -
+2022-01-27 09:07:54,574 - services.ssdp - DEBUG - Sending M-Search response to 192.168.1.18
+192.168.1.11 - - [27/Jan/2022 09:07:55] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:55] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:57] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.19 - - [27/Jan/2022 09:07:59] "[37mGET /api/hueessf87f4f11ec8dd4b827ebf38830 HTTP/1.1[0m" 200 -
+192.168.1.19 - - [27/Jan/2022 09:07:59] "[37mGET /api/hueessf87f4f11ec8dd4b827ebf38830 HTTP/1.1[0m" 200 -
+192.168.1.19 - - [27/Jan/2022 09:07:59] "[37mGET /api/hueessf87f4f11ec8dd4b827ebf38830 HTTP/1.1[0m" 200 -
+192.168.1.19 - - [27/Jan/2022 09:07:59] "[37mGET /api/hueessf87f4f11ec8dd4b827ebf38830 HTTP/1.1[0m" 200 -
+192.168.1.19 - - [27/Jan/2022 09:07:59] "[37mGET /api/hueessf87f4f11ec8dd4b827ebf38830 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:07:59] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:00] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:01] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:03] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:05] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:05] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:07] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:09] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:10] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:11] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:13] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:15] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:15] "[37mGET /lights HTTP/1.1[0m" 200 -
+192.168.1.19 - - [27/Jan/2022 09:08:15] "[37mGET /api/config HTTP/1.1[0m" 200 -
+2022-01-27 09:08:15,873 - services.ssdp - DEBUG - Sending M-Search response to 192.168.1.19
 {'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
+192.168.1.19 - - [27/Jan/2022 09:08:17] "[37mPOST /api/ HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:17] "[37mGET /lights HTTP/1.1[0m" 200 -
 {'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
+192.168.1.19 - - [27/Jan/2022 09:08:18] "[37mPOST /api/ HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:18] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:19] "[37mPUT /api/d372c6187f4f11ec9571b827ebf38830/config HTTP/1.1[0m" 200 -
 {'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
-{'devicetype': 'Hue#Mi 9 SE', 'generateclientkey': True}
-{'devicetype': 'Hue#Mi 9 SE', 'generateclientkey': True}
-{'devicetype': 'Hue#Mi 9 SE', 'generateclientkey': True}
-[{'success': {'/config/linkbutton': {'lastlinkbuttonpushed': 1643273519}}}]
-{'devicetype': 'Hue#Mi 9 SE', 'generateclientkey': True}
-[{'success': {'clientkey': '07678110C2824D648057FA9369DB3C8F',
-              'username': '63a5d0067f4e11ec8ef6b827ebf38830'}}]
+192.168.1.19 - - [27/Jan/2022 09:08:19] "[37mPOST /api/ HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:20] "[31m[1m{"linkbutton":{"lastlinkbuttonpushed":1643274498}}GET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 405 -
+{'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
+192.168.1.19 - - [27/Jan/2022 09:08:20] "[37mPOST /api/ HTTP/1.1[0m" 200 -
+{'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
+192.168.1.19 - - [27/Jan/2022 09:08:21] "[37mPOST /api/ HTTP/1.1[0m" 200 -
+{'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
+192.168.1.19 - - [27/Jan/2022 09:08:22] "[37mPOST /api/ HTTP/1.1[0m" 200 -
+{'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
+192.168.1.19 - - [27/Jan/2022 09:08:23] "[37mPOST /api/ HTTP/1.1[0m" 200 -
+{'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
+192.168.1.19 - - [27/Jan/2022 09:08:24] "[37mPOST /api/ HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:25] "[37mGET /api/d372c6187f4f11ec9571b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+{'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
+192.168.1.19 - - [27/Jan/2022 09:08:25] "[37mPOST /api/ HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:25] "[37mGET / HTTP/1.1[0m" 200 -
+2022-01-27 09:08:26,039 - configManager.configHandler - DEBUG - Dump config file /opt/hue-emulator/config/config.yaml
+2022-01-27 09:08:26,041 - configManager.configHandler - DEBUG - Dump config file /opt/hue-emulator/config/lights.yaml
+2022-01-27 09:08:26,043 - configManager.configHandler - DEBUG - Dump config file /opt/hue-emulator/config/groups.yaml
+2022-01-27 09:08:26,045 - configManager.configHandler - DEBUG - Dump config file /opt/hue-emulator/config/scenes.yaml
+2022-01-27 09:08:26,047 - configManager.configHandler - DEBUG - Dump config file /opt/hue-emulator/config/rules.yaml
+2022-01-27 09:08:26,049 - configManager.configHandler - DEBUG - Dump config file /opt/hue-emulator/config/resourcelinks.yaml
+2022-01-27 09:08:26,051 - configManager.configHandler - DEBUG - Dump config file /opt/hue-emulator/config/schedules.yaml
+2022-01-27 09:08:26,069 - configManager.configHandler - DEBUG - Dump config file /opt/hue-emulator/config/sensors.yaml
+2022-01-27 09:08:26,071 - configManager.configHandler - DEBUG - Dump config file /opt/hue-emulator/config/behavior_instance.yaml
+192.168.1.11 - - [27/Jan/2022 09:08:26] "[37mGET /get-key HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:26] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:26] "[37mGET /api/af7ef5e67f5011ecbc92b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+{'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
+192.168.1.19 - - [27/Jan/2022 09:08:26] "[37mPOST /api/ HTTP/1.1[0m" 200 -
+2022-01-27 09:08:27,335 - services.stateFetch - INFO - start lights sync
+[{'success': {'/config/linkbutton': {'lastlinkbuttonpushed': 1643274507}}}]
+2022-01-27 09:08:27,585 - configManager.configHandler - DEBUG - Dump config file /opt/hue-emulator/config/config.yaml
+192.168.1.11 - - [27/Jan/2022 09:08:27] "[37mPUT /api/af7ef5e67f5011ecbc92b827ebf38830/config HTTP/1.1[0m" 200 -
+{'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
+[{'success': {'clientkey': '3A08C372B2184114BB1D0343D005F063',
+              'username': 'hueessd27f5011ec911db827ebf38830'}}]
+2022-01-27 09:08:27,804 - configManager.configHandler - DEBUG - Dump config file /opt/hue-emulator/config/config.yaml
+2022-01-27 09:08:27,807 - configManager.configHandler - DEBUG - Dump config file /opt/hue-emulator/config/lights.yaml
+2022-01-27 09:08:27,810 - configManager.configHandler - DEBUG - Dump config file /opt/hue-emulator/config/groups.yaml
+2022-01-27 09:08:27,813 - configManager.configHandler - DEBUG - Dump config file /opt/hue-emulator/config/scenes.yaml
+2022-01-27 09:08:27,815 - configManager.configHandler - DEBUG - Dump config file /opt/hue-emulator/config/rules.yaml
+2022-01-27 09:08:27,818 - configManager.configHandler - DEBUG - Dump config file /opt/hue-emulator/config/resourcelinks.yaml
+2022-01-27 09:08:27,821 - configManager.configHandler - DEBUG - Dump config file /opt/hue-emulator/config/schedules.yaml
+2022-01-27 09:08:27,841 - configManager.configHandler - DEBUG - Dump config file /opt/hue-emulator/config/sensors.yaml
+2022-01-27 09:08:27,844 - configManager.configHandler - DEBUG - Dump config file /opt/hue-emulator/config/behavior_instance.yaml
+192.168.1.19 - - [27/Jan/2022 09:08:27] "[37mPOST /api/ HTTP/1.1[0m" 200 -
+192.168.1.19 - - [27/Jan/2022 09:08:27] "[37mGET /api/hueessd27f5011ec911db827ebf38830 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:31] "[37mGET /api/af7ef5e67f5011ecbc92b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
 scan for light
-[{'creationtime': '2022-01-27T08:52:28Z',
-  'data': [{'color': {'xy': {'x': 0.5190164318641401,
-                             'y': 0.25253947978756586}},
-            'id': 'b65fe889-548a-4dcf-976f-a0298f323033',
-            'on': {'on': True},
-            'type': 'light'}],
-  'id': '3ae2aa1f-7820-4f18-847b-ba52a1b4da81',
-  'id_v1': '/lights/1',
-  'type': 'update'}]
-{'alert': 'select'}
-[{'success': {'/lights/1/state/alert': 'select'}}]
-{'name': 'Yeelight colorc .41'}
-[{'success': {'/lights/1/name': 'Yeelight colorc .41'}}]
-{'archetype': 'sultanbulb'}
-[{'success': {'/lights/1/config/archetype': 'sultanbulb'}}]
-[{'creationtime': '2022-01-27T08:52:36Z',
-  'data': [{'color': {'xy': {'x': 0.5190164371798149, 'y': 0.2525394788868266}},
-            'id': 'b65fe889-548a-4dcf-976f-a0298f323033',
-            'on': {'on': True},
-            'type': 'light'}],
-  'id': 'b8096e21-c35f-4e05-be29-2dd9ff7727e7',
-  'id_v1': '/lights/1',
-  'type': 'update'}]
-[{'creationtime': '2022-01-27T08:52:36Z',
-  'data': [{'color': {'xy': {'x': 0.5190164371798149, 'y': 0.2525394788868266}},
-            'id': 'b65fe889-548a-4dcf-976f-a0298f323033',
-            'on': {'on': True},
-            'type': 'light'}],
-  'id': 'b8096e21-c35f-4e05-be29-2dd9ff7727e7',
-  'id_v1': '/lights/1',
-  'type': 'update'},
- {'creationtime': '2022-01-27T08:52:37Z',
-  'data': [{'color': {'xy': {'x': 0.5261858231796396, 'y': 0.2655967424866813}},
-            'id': 'b65fe889-548a-4dcf-976f-a0298f323033',
-            'on': {'on': True},
-            'type': 'light'}],
-  'id': '7e854b72-2ea9-4232-817b-0d03bd907c6f',
-  'id_v1': '/lights/1',
-  'type': 'update'}]
-[{'creationtime': '2022-01-27T08:52:37Z',
-  'data': [{'color': {'xy': {'x': 0.5430131890713266, 'y': 0.3316314406784765}},
-            'id': 'b65fe889-548a-4dcf-976f-a0298f323033',
-            'on': {'on': True},
-            'type': 'light'}],
-  'id': '6bb774f7-79b6-47f8-a1b9-100fd54feaf5',
-  'id_v1': '/lights/1',
-  'type': 'update'}]
-[{'creationtime': '2022-01-27T08:52:37Z',
-  'data': [{'color': {'xy': {'x': 0.5430131890713266, 'y': 0.3316314406784765}},
-            'id': 'b65fe889-548a-4dcf-976f-a0298f323033',
-            'on': {'on': True},
-            'type': 'light'}],
-  'id': '6bb774f7-79b6-47f8-a1b9-100fd54feaf5',
-  'id_v1': '/lights/1',
-  'type': 'update'},
- {'creationtime': '2022-01-27T08:52:37Z',
-  'data': [{'color': {'xy': {'x': 0.5426973206346275,
-                             'y': 0.34201303043029524}},
-            'id': 'b65fe889-548a-4dcf-976f-a0298f323033',
-            'on': {'on': True},
-            'type': 'light'}],
-  'id': 'd2ab25de-3c2c-4b64-95bd-5d8650e6d2cc',
-  'id_v1': '/lights/1',
-  'type': 'update'}]
-{'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
-{'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
-{'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
-[{'success': {'/config/linkbutton': {'lastlinkbuttonpushed': 1643273578}}}]
-{'devicetype': 'Hue Essentials#Mi 9 SE', 'generateclientkey': True}
-[{'success': {'clientkey': '30D1417726334E19863702C7F4C65D3B',
-              'username': 'hueesse47f4e11ecbf36b827ebf38830'}}]
-{'xy': [0.538871092909142, 0.3342471418201197]}
-[{'success': {'/lights/1/state/xy': [0.538871092909142, 0.3342471418201197]}}]
-{'xy': [0.5802921359790991, 0.31441285280001746]}
-[{'success': {'/lights/1/state/xy': [0.5802921359790991, 0.31441285280001746]}}]
-{'xy': [0.6037736110559155, 0.2791602633680685]}
-[{'success': {'/lights/1/state/xy': [0.6037736110559155, 0.2791602633680685]}}]
-{'xy': [0.5952599558181881, 0.2684406725880562]}
-[{'success': {'/lights/1/state/xy': [0.5952599558181881, 0.2684406725880562]}}]
-{'xy': [0.5930183744712558, 0.2686368077795828]}
-[{'success': {'/lights/1/state/xy': [0.5930183744712558, 0.2686368077795828]}}]
-{'xy': [0.40975396972668154, 0.2297739719245427]}
-[{'success': {'/lights/1/state/xy': [0.40975396972668154, 0.2297739719245427]}}]
-{'xy': [0.40614265299022284, 0.2272734443386942]}
-[{'success': {'/lights/1/state/xy': [0.40614265299022284, 0.2272734443386942]}}]
-{'xy': [0.362869617181715, 0.198781596638264]}
-[{'success': {'/lights/1/state/xy': [0.362869617181715, 0.198781596638264]}}]
-{'xy': [0.26115373788441726, 0.13839734746433155]}
-[{'success': {'/lights/1/state/xy': [0.26115373788441726,
-                                     0.13839734746433155]}}]
-{'xy': [0.24649078056008283, 0.12874344619571346]}
-[{'success': {'/lights/1/state/xy': [0.24649078056008283,
-                                     0.12874344619571346]}}]
-{'xy': [0.24985025859492388, 0.133390477706407]}
-[{'success': {'/lights/1/state/xy': [0.24985025859492388, 0.133390477706407]}}]
-{'ct': 260}
-[{'success': {'/lights/1/state/ct': 260}}]
-{'ct': 235}
-[{'success': {'/lights/1/state/ct': 235}}]
-{'ct': 220}
-[{'success': {'/lights/1/state/ct': 220}}]
-{'ct': 220}
-[{'success': {'/lights/1/state/ct': 220}}]
+192.168.1.19 - - [27/Jan/2022 09:08:33] "[37mPOST /api/hueessd27f5011ec911db827ebf38830/lights HTTP/1.1[0m" 200 -
+{'lastscan': 'active'}
+192.168.1.19 - - [27/Jan/2022 09:08:33] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/new HTTP/1.1[0m" 200 -
+{'lastscan': 'active'}
+192.168.1.19 - - [27/Jan/2022 09:08:34] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/new HTTP/1.1[0m" 200 -
+{'lastscan': 'active'}
+192.168.1.19 - - [27/Jan/2022 09:08:35] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/new HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:36] "[37mGET /api/af7ef5e67f5011ecbc92b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+{'lastscan': 'active'}
+192.168.1.19 - - [27/Jan/2022 09:08:37] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/new HTTP/1.1[0m" 200 -
+192.168.1.19 - - [27/Jan/2022 09:08:38] "[37mGET /api/hueessd27f5011ec911db827ebf38830 HTTP/1.1[0m" 200 -
+2022-01-27 09:08:38,347 - services.stateFetch - INFO - start lights sync
+{'lastscan': 'active'}
+192.168.1.19 - - [27/Jan/2022 09:08:38] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/new HTTP/1.1[0m" 200 -
+2022-01-27 09:08:38,917 - lights.discover - INFO - [
+    "192.168.1.1:80",
+    "192.168.1.17:80",
+    "192.168.1.22:80"
+]
+2022-01-27 09:08:39,127 - lights.protocols.yeelight - DEBUG - ['HTTP/1.1 200 OK', 'Cache-Control: max-age=3600', 'Date: ', 'Ext: ', 'Location: yeelight://192.168.1.41:55443', 'Server: POSIX UPnP/1.0 YGLC/1', 'id: 0x00000000186e1dd3', 'model: colorc', 'fw_ver: 16', 'support: get_prop set_default set_power toggle set_bright set_scene cron_add cron_get cron_del start_cf stop_cf set_ct_abx adjust_ct set_name set_adjust adjust_bright adjust_color set_rgb set_hsv set_music udp_sess_new udp_sess_keep_alive udp_chroma_sess_new', 'power: on', 'bright: 95', 'color_mode: 2', 'ct: 4169', 'rgb: 16711686', 'hue: 359', 'sat: 100', 'name: ', '']
+2022-01-27 09:08:39,128 - lights.protocols.yeelight - INFO - HTTP/1.1 200 OK
+2022-01-27 09:08:39,129 - lights.protocols.yeelight - INFO - Cache-Control: max-age=3600
+2022-01-27 09:08:39,129 - lights.protocols.yeelight - INFO - Date: 
+2022-01-27 09:08:39,130 - lights.protocols.yeelight - INFO - Ext: 
+2022-01-27 09:08:39,131 - lights.protocols.yeelight - INFO - Location: yeelight://192.168.1.41:55443
+2022-01-27 09:08:39,132 - lights.protocols.yeelight - INFO - Server: POSIX UPnP/1.0 YGLC/1
+2022-01-27 09:08:39,132 - lights.protocols.yeelight - INFO - id: 0x00000000186e1dd3
+2022-01-27 09:08:39,133 - lights.protocols.yeelight - INFO - model: colorc
+2022-01-27 09:08:39,134 - lights.protocols.yeelight - INFO - fw_ver: 16
+2022-01-27 09:08:39,135 - lights.protocols.yeelight - INFO - support: get_prop set_default set_power toggle set_bright set_scene cron_add cron_get cron_del start_cf stop_cf set_ct_abx adjust_ct set_name set_adjust adjust_bright adjust_color set_rgb set_hsv set_music udp_sess_new udp_sess_keep_alive udp_chroma_sess_new
+2022-01-27 09:08:39,136 - lights.protocols.yeelight - INFO - power: on
+2022-01-27 09:08:39,137 - lights.protocols.yeelight - INFO - bright: 95
+2022-01-27 09:08:39,138 - lights.protocols.yeelight - INFO - color_mode: 2
+2022-01-27 09:08:39,139 - lights.protocols.yeelight - INFO - ct: 4169
+2022-01-27 09:08:39,140 - lights.protocols.yeelight - INFO - rgb: 16711686
+2022-01-27 09:08:39,141 - lights.protocols.yeelight - INFO - hue: 359
+2022-01-27 09:08:39,141 - lights.protocols.yeelight - INFO - sat: 100
+2022-01-27 09:08:39,142 - lights.protocols.yeelight - INFO - name: 
+2022-01-27 09:08:39,143 - lights.protocols.yeelight - INFO - 
+2022-01-27 09:08:39,143 - lights.protocols.yeelight - INFO - Found YeeLight: 0x00000000186e1dd3
+2022-01-27 09:08:39,144 - lights.protocols.yeelight - DEBUG - ['HTTP/1.1 200 OK', 'Cache-Control: max-age=3600', 'Date: ', 'Ext: ', 'Location: yeelight://192.168.1.41:55443', 'Server: POSIX UPnP/1.0 YGLC/1', 'id: 0x00000000186e1dd3', 'model: colorc', 'fw_ver: 16', 'support: get_prop set_default set_power toggle set_bright set_scene cron_add cron_get cron_del start_cf stop_cf set_ct_abx adjust_ct set_name set_adjust adjust_bright adjust_color set_rgb set_hsv set_music udp_sess_new udp_sess_keep_alive udp_chroma_sess_new', 'power: on', 'bright: 95', 'color_mode: 2', 'ct: 4169', 'rgb: 16711686', 'hue: 359', 'sat: 100', 'name: ', '']
+2022-01-27 09:08:39,145 - lights.protocols.yeelight - INFO - HTTP/1.1 200 OK
+2022-01-27 09:08:39,146 - lights.protocols.yeelight - INFO - Cache-Control: max-age=3600
+2022-01-27 09:08:39,147 - lights.protocols.yeelight - INFO - Date: 
+2022-01-27 09:08:39,147 - lights.protocols.yeelight - INFO - Ext: 
+2022-01-27 09:08:39,148 - lights.protocols.yeelight - INFO - Location: yeelight://192.168.1.41:55443
+2022-01-27 09:08:39,149 - lights.protocols.yeelight - INFO - Server: POSIX UPnP/1.0 YGLC/1
+2022-01-27 09:08:39,150 - lights.protocols.yeelight - INFO - id: 0x00000000186e1dd3
+2022-01-27 09:08:39,150 - lights.protocols.yeelight - INFO - model: colorc
+2022-01-27 09:08:39,151 - lights.protocols.yeelight - INFO - fw_ver: 16
+2022-01-27 09:08:39,151 - lights.protocols.yeelight - INFO - support: get_prop set_default set_power toggle set_bright set_scene cron_add cron_get cron_del start_cf stop_cf set_ct_abx adjust_ct set_name set_adjust adjust_bright adjust_color set_rgb set_hsv set_music udp_sess_new udp_sess_keep_alive udp_chroma_sess_new
+2022-01-27 09:08:39,152 - lights.protocols.yeelight - INFO - power: on
+2022-01-27 09:08:39,153 - lights.protocols.yeelight - INFO - bright: 95
+2022-01-27 09:08:39,154 - lights.protocols.yeelight - INFO - color_mode: 2
+2022-01-27 09:08:39,154 - lights.protocols.yeelight - INFO - ct: 4169
+2022-01-27 09:08:39,155 - lights.protocols.yeelight - INFO - rgb: 16711686
+2022-01-27 09:08:39,156 - lights.protocols.yeelight - INFO - hue: 359
+2022-01-27 09:08:39,156 - lights.protocols.yeelight - INFO - sat: 100
+2022-01-27 09:08:39,157 - lights.protocols.yeelight - INFO - name: 
+2022-01-27 09:08:39,158 - lights.protocols.yeelight - INFO - 
+2022-01-27 09:08:39,158 - lights.protocols.yeelight - INFO - Found YeeLight: 0x00000000186e1dd3
+192.168.1.19 - - [27/Jan/2022 09:08:39] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/new HTTP/1.1[0m" 200 -
+{'lastscan': 'active'}
+{'lastscan': 'active'}
+192.168.1.19 - - [27/Jan/2022 09:08:40] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/new HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:41] "[37mGET /api/af7ef5e67f5011ecbc92b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+2022-01-27 09:08:41,590 - services.ssdp - DEBUG - Sending M-Search response to 192.168.1.11
+{'lastscan': 'active'}
+192.168.1.19 - - [27/Jan/2022 09:08:41] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/new HTTP/1.1[0m" 200 -
+2022-01-27 09:08:42,311 - services.ssdp - DEBUG - Sending M-Search response to 192.168.1.11
+{'lastscan': 'active'}
+192.168.1.19 - - [27/Jan/2022 09:08:42] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/new HTTP/1.1[0m" 200 -
+{'lastscan': 'active'}
+192.168.1.19 - - [27/Jan/2022 09:08:43] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/new HTTP/1.1[0m" 200 -
+2022-01-27 09:08:43,833 - services.ssdp - DEBUG - Sending M-Search response to 192.168.1.11
+2022-01-27 09:08:44,164 - lights.protocols.yeelight - DEBUG - Yeelight search end
+2022-01-27 09:08:44,165 - lights.protocols.native_multi - DEBUG - native: <discover> invoked!
+2022-01-27 09:08:44,345 - lights.protocols.tasmota - DEBUG - tasmota: <discover> invoked!
+2022-01-27 09:08:44,345 - lights.protocols.tasmota - DEBUG - tasmota: probing ip 192.168.1.1:80
+2022-01-27 09:08:44,378 - lights.protocols.tasmota - DEBUG - tasmota: probing ip 192.168.1.17:80
+2022-01-27 09:08:44,492 - lights.protocols.tasmota - DEBUG - tasmota: probing ip 192.168.1.22:80
+2022-01-27 09:08:44,545 - lights.protocols.wled - INFO - <WLED> discovery started
+2022-01-27 09:08:44,835 - services.ssdp - DEBUG - Sending M-Search response to 192.168.1.11
+{'lastscan': 'active'}
+192.168.1.19 - - [27/Jan/2022 09:08:44] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/new HTTP/1.1[0m" 200 -
+{'lastscan': 'active'}
+192.168.1.19 - - [27/Jan/2022 09:08:45] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/new HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:46] "[37mGET /api/af7ef5e67f5011ecbc92b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+2022-01-27 09:08:46,559 - lights.protocols.wled - INFO - <WLED> Nothing found using mDNS, trying device_ips method...
+2022-01-27 09:08:46,717 - lights.protocols.shelly - DEBUG - shelly: <discover> invoked!
+2022-01-27 09:08:46,718 - lights.protocols.shelly - DEBUG - shelly: probing ip 192.168.1.1:80
+2022-01-27 09:08:46,751 - lights.protocols.shelly - DEBUG - shelly: probing ip 192.168.1.17:80
+2022-01-27 09:08:46,865 - lights.protocols.shelly - DEBUG - shelly: probing ip 192.168.1.22:80
+2022-01-27 09:08:46,899 - lights.protocols.esphome - DEBUG - ESPHome: <discover> invoked!
+2022-01-27 09:08:46,900 - lights.protocols.esphome - DEBUG - ESPHome: probing ip 192.168.1.1:80
+2022-01-27 09:08:46,931 - lights.protocols.esphome - DEBUG - ESPHome: ip 192.168.1.1:80 is unknown device, Expecting value: line 1 column 1 (char 0)
+2022-01-27 09:08:46,931 - lights.protocols.esphome - DEBUG - ESPHome: probing ip 192.168.1.17:80
+{'lastscan': 'active'}
+192.168.1.19 - - [27/Jan/2022 09:08:47] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/new HTTP/1.1[0m" 200 -
+2022-01-27 09:08:47,055 - lights.protocols.esphome - DEBUG - ESPHome: ip 192.168.1.17:80 is unknown device, Expecting value: line 2 column 1 (char 1)
+2022-01-27 09:08:47,055 - lights.protocols.esphome - DEBUG - ESPHome: probing ip 192.168.1.22:80
+2022-01-27 09:08:47,088 - lights.protocols.esphome - DEBUG - ESPHome: ip 192.168.1.22:80 is unknown device, Expecting value: line 1 column 1 (char 0)
+2022-01-27 09:08:47,089 - lights.protocols.hyperion - DEBUG - Hyperion: <discover> invoked!
+2022-01-27 09:08:47,792 - services.ssdp - DEBUG - Sending M-Search response to 192.168.1.23
+{'lastscan': 'active'}
+192.168.1.19 - - [27/Jan/2022 09:08:48] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/new HTTP/1.1[0m" 200 -
+192.168.1.19 - - [27/Jan/2022 09:08:48] "[37mGET /api/hueessd27f5011ec911db827ebf38830 HTTP/1.1[0m" 200 -
+{'lastscan': 'active'}
+192.168.1.19 - - [27/Jan/2022 09:08:49] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/new HTTP/1.1[0m" 200 -
+2022-01-27 09:08:49,359 - services.stateFetch - INFO - start lights sync
+{'lastscan': 'active'}
+192.168.1.19 - - [27/Jan/2022 09:08:50] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/new HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:51] "[37mGET /api/af7ef5e67f5011ecbc92b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+{'lastscan': 'active'}
+192.168.1.19 - - [27/Jan/2022 09:08:51] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/new HTTP/1.1[0m" 200 -
+{'lastscan': 'active'}
+192.168.1.19 - - [27/Jan/2022 09:08:52] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/new HTTP/1.1[0m" 200 -
+{'lastscan': 'active'}
+192.168.1.19 - - [27/Jan/2022 09:08:53] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/new HTTP/1.1[0m" 200 -
+{'lastscan': 'active'}
+192.168.1.19 - - [27/Jan/2022 09:08:54] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/new HTTP/1.1[0m" 200 -
+2022-01-27 09:08:54,692 - lights.protocols.hyperion - DEBUG - Hyperion search end
+2022-01-27 09:08:54,693 - lights.discover - INFO - Add new light Yeelight colorc .41
+2022-01-27 09:08:54,724 - services.eventStreamer - DEBUG - {'creationtime': '2022-01-27T09:08:54Z', 'data': [{'id': '69518d53-d667-5fda-9575-f271b047be4d', 'type': 'entertainment', 'id_v1': '/lights/1', 'proxy': False, 'renderer': True, 'segments': {'configurable': False, 'max_segments': 1, 'segments': [{'length': 1, 'start': 0}]}}], 'id': '4ed77a11-cff5-499c-b4ee-2d8698b657a0', 'type': 'add', 'id_v1': '/lights/1'}
+2022-01-27 09:08:54,727 - services.eventStreamer - DEBUG - {'creationtime': '2022-01-27T09:08:54Z', 'data': [{'id': '63cee57d-3038-54dd-a792-479fafc0efee', 'id_v1': '/lights/1', 'mac_address': '00:17:88:01:00:cb:b8:c8', 'owner': {'rid': 'a6b002a6-bcb7-5668-96f5-b9a06cc26312', 'rtype': 'device'}, 'status': 'connected', 'type': 'zigbee_connectivity'}], 'id': 'bdfcf74f-622d-4686-b3d6-1cb31c5e9d47', 'type': 'add'}
+2022-01-27 09:08:54,728 - services.eventStreamer - DEBUG - {'creationtime': '2022-01-27T09:08:54Z', 'data': [{'alert': {'action_values': ['breathe']}, 'color': {'gamut': {'blue': {'x': 0.1532, 'y': 0.0475}, 'green': {'x': 0.17, 'y': 0.7}, 'red': {'x': 0.6915, 'y': 0.3083}}, 'gamut_type': 'C', 'xy': {'x': 0.0, 'y': 0.0}}, 'color_temperature': {'mirek': 461, 'mirek_schema': {'mirek_maximum': 500, 'mirek_minimum': 153}, 'mirek_valid': True}, 'dimming': {'brightness': 78.74015748031496}, 'dynamics': {'speed': 0, 'speed_valid': False, 'status': 'none', 'status_values': ['none', 'dynamic_palette']}, 'id': '4ed77a11-cff5-499c-b4ee-2d8698b657a0', 'id_v1': '/lights/1', 'metadata': {'name': 'Yeelight colorc .41', 'archetype': 'sultan_bulb'}, 'mode': 'normal', 'on': {'on': False}, 'owner': {'rid': 'a6b002a6-bcb7-5668-96f5-b9a06cc26312', 'rtype': 'device'}, 'type': 'light'}], 'id': '232ca21b-a189-4db4-b9bd-549ccb4095b1', 'type': 'add'}
+2022-01-27 09:08:54,729 - services.eventStreamer - DEBUG - {'creationtime': '2022-01-27T09:08:54Z', 'data': [{'id': 'a6b002a6-bcb7-5668-96f5-b9a06cc26312', 'id_v1': '/lights/1', 'metadata': {'archetype': 'sultan_bulb', 'name': 'Yeelight colorc .41'}, 'product_data': {'certified': True, 'manufacturer_name': 'Signify Netherlands B.V.', 'product_archetype': 'sultan_bulb', 'product_name': 'Hue color lamp', 'software_version': '1.90.1', 'model_id': 'LCT015'}, 'services': [{'rid': '4ed77a11-cff5-499c-b4ee-2d8698b657a0', 'rtype': 'light'}, {'rid': '63cee57d-3038-54dd-a792-479fafc0efee', 'rtype': 'zigbee_connectivity'}, {'rid': '69518d53-d667-5fda-9575-f271b047be4d', 'rtype': 'entertainment'}], 'type': 'device'}], 'id': 'a9cbc222-2964-48a4-ad7f-e51aa277a8f5', 'type': 'add'}
+2022-01-27 09:08:54,730 - services.eventStreamer - DEBUG - {'creationtime': '2022-01-27T09:08:54Z', 'data': [{'alert': {'action_values': ['breathe']}, 'id': '41d19334-c7ad-4d8c-90dc-87ed0fb0d9ea', 'id_v1': '/groups/0', 'on': {'on': False}, 'type': 'grouped_light'}], 'id': '0ce33250-baf9-4098-8a08-d4178ec6bbde', 'type': 'add'}
+2022-01-27 09:08:54,730 - services.eventStreamer - DEBUG - {'creationtime': '2022-01-27T09:08:54Z', 'data': [{'grouped_services': [{'rid': '41d19334-c7ad-4d8c-90dc-87ed0fb0d9ea', 'rtype': 'grouped_light'}], 'id': '03badcaf-99af-524e-bcd6-16e4b06c9532', 'id_v1': '/groups/0', 'type': 'zone'}], 'id': '5e16ffad-77f2-439b-8cbc-62b8faa4eb06', 'type': 'update'}
+2022-01-27 09:08:54,731 - services.eventStreamer - DEBUG - {'creationtime': '2022-01-27T09:08:54Z', 'data': [{'children': [{'rid': 'a6b002a6-bcb7-5668-96f5-b9a06cc26312', 'rtype': 'device'}], 'id': '03badcaf-99af-524e-bcd6-16e4b06c9532', 'id_v1': '/groups/0', 'services': [{'rid': '4ed77a11-cff5-499c-b4ee-2d8698b657a0', 'rtype': 'light'}, {'rid': '41d19334-c7ad-4d8c-90dc-87ed0fb0d9ea', 'rtype': 'grouped_light'}], 'type': 'zone'}], 'id': 'ce421e3f-3381-477e-9749-c76650d45ed5', 'type': 'update'}
+2022-01-27 09:08:54,731 - services.eventStreamer - DEBUG - {'creationtime': '2022-01-27T09:08:54Z', 'data': [{'children': [{'rid': '41d19334-c7ad-4d8c-90dc-87ed0fb0d9ea', 'rtype': 'room'}, {'rid': '4ed77a11-cff5-499c-b4ee-2d8698b657a0', 'rtype': 'light'}], 'id': '95b8423e-4981-5735-aa3c-abb303a91083', 'id_v1': '/groups/0', 'type': 'bridge_home'}], 'id': '652f6c1a-38f6-4e9a-bd9f-99118299a8d1', 'type': 'update'}
+2022-01-27 09:08:54,733 - configManager.configHandler - DEBUG - Dump config file /opt/hue-emulator/config/lights.yaml
+2022-01-27 09:08:54,734 - lights.discover - INFO - Update IP for light Yeelight colorc .41
+{'1': {'name': 'Yeelight colorc .41'}, 'lastscan': '2022-01-27T09:08:54'}
+192.168.1.19 - - [27/Jan/2022 09:08:55] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/new HTTP/1.1[0m" 200 -
+192.168.1.19 - - [27/Jan/2022 09:08:55] "[37mGET /api/hueessd27f5011ec911db827ebf38830/lights/1 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:08:56] "[37mGET /api/af7ef5e67f5011ecbc92b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.19 - - [27/Jan/2022 09:08:58] "[37mGET /api/hueessd27f5011ec911db827ebf38830 HTTP/1.1[0m" 200 -
+2022-01-27 09:09:00,372 - services.stateFetch - INFO - start lights sync
+2022-01-27 09:09:00,373 - services.stateFetch - DEBUG - fetch Yeelight colorc .41
+2022-01-27 09:09:00,538 - services.stateFetch - WARNING - Yeelight colorc .41 is unreachable: name 'self' is not defined
+192.168.1.11 - - [27/Jan/2022 09:09:01] "[37mGET /api/af7ef5e67f5011ecbc92b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+{'on': True}
+2022-01-27 09:09:02,355 - lights.protocols.yeelight - WARNING - Yeelight command error: 'YeelightConnection' object has no attribute '_id'
+[{'success': {'/lights/1/state/on': True}}]
+192.168.1.19 - - [27/Jan/2022 09:09:02] "[37mPUT /api/hueessd27f5011ec911db827ebf38830/lights/1/state HTTP/1.1[0m" 200 -
+2022-01-27 09:09:02,445 - services.eventStreamer - DEBUG - {'creationtime': '2022-01-27T09:09:02Z', 'data': [{'id': 'a6b002a6-bcb7-5668-96f5-b9a06cc26312', 'id_v1': '/lights/1', 'metadata': {'archetype': 'sultan_bulb', 'name': 'Yeelight colorc .41'}, 'product_data': {'certified': True, 'manufacturer_name': 'Signify Netherlands B.V.', 'product_archetype': 'sultan_bulb', 'product_name': 'Hue color lamp', 'software_version': '1.90.1', 'model_id': 'LCT015'}, 'services': [{'rid': '4ed77a11-cff5-499c-b4ee-2d8698b657a0', 'rtype': 'light'}, {'rid': '63cee57d-3038-54dd-a792-479fafc0efee', 'rtype': 'zigbee_connectivity'}, {'rid': '69518d53-d667-5fda-9575-f271b047be4d', 'rtype': 'entertainment'}], 'type': 'device'}], 'id': '548f767e-6d36-48d6-8cb7-6e20ee5cf314', 'type': 'update'}
+{'xy': [0.5653392249940882, 0.2535659822477965]}
+2022-01-27 09:09:04,237 - lights.protocols.yeelight - WARNING - Yeelight command error: 'YeelightConnection' object has no attribute '_id'
+[{'success': {'/lights/1/state/xy': [0.5653392249940882, 0.2535659822477965]}}]
+192.168.1.19 - - [27/Jan/2022 09:09:04] "[37mPUT /api/hueessd27f5011ec911db827ebf38830/lights/1/state HTTP/1.1[0m" 200 -
+2022-01-27 09:09:04,348 - services.eventStreamer - DEBUG - {'creationtime': '2022-01-27T09:09:04Z', 'data': [{'id': 'a6b002a6-bcb7-5668-96f5-b9a06cc26312', 'id_v1': '/lights/1', 'metadata': {'archetype': 'sultan_bulb', 'name': 'Yeelight colorc .41'}, 'product_data': {'certified': True, 'manufacturer_name': 'Signify Netherlands B.V.', 'product_archetype': 'sultan_bulb', 'product_name': 'Hue color lamp', 'software_version': '1.90.1', 'model_id': 'LCT015'}, 'services': [{'rid': '4ed77a11-cff5-499c-b4ee-2d8698b657a0', 'rtype': 'light'}, {'rid': '63cee57d-3038-54dd-a792-479fafc0efee', 'rtype': 'zigbee_connectivity'}, {'rid': '69518d53-d667-5fda-9575-f271b047be4d', 'rtype': 'entertainment'}], 'type': 'device'}], 'id': '2233e649-dfe3-490e-a89b-b924ce1b4af6', 'type': 'update'}
+{'xy': [0.19942155847833612, 0.27718889890554527]}
+2022-01-27 09:09:05,058 - lights.protocols.yeelight - WARNING - Yeelight command error: 'YeelightConnection' object has no attribute '_id'
+[{'success': {'/lights/1/state/xy': [0.19942155847833612,
+                                     0.27718889890554527]}}]
+192.168.1.19 - - [27/Jan/2022 09:09:05] "[37mPUT /api/hueessd27f5011ec911db827ebf38830/lights/1/state HTTP/1.1[0m" 200 -
+2022-01-27 09:09:05,250 - services.eventStreamer - DEBUG - {'creationtime': '2022-01-27T09:09:05Z', 'data': [{'id': 'a6b002a6-bcb7-5668-96f5-b9a06cc26312', 'id_v1': '/lights/1', 'metadata': {'archetype': 'sultan_bulb', 'name': 'Yeelight colorc .41'}, 'product_data': {'certified': True, 'manufacturer_name': 'Signify Netherlands B.V.', 'product_archetype': 'sultan_bulb', 'product_name': 'Hue color lamp', 'software_version': '1.90.1', 'model_id': 'LCT015'}, 'services': [{'rid': '4ed77a11-cff5-499c-b4ee-2d8698b657a0', 'rtype': 'light'}, {'rid': '63cee57d-3038-54dd-a792-479fafc0efee', 'rtype': 'zigbee_connectivity'}, {'rid': '69518d53-d667-5fda-9575-f271b047be4d', 'rtype': 'entertainment'}], 'type': 'device'}], 'id': 'a95d5277-e3a0-48a5-9721-78d045e90781', 'type': 'update'}
+{'xy': [0.31503795709625654, 0.544177982244455]}
+2022-01-27 09:09:05,499 - lights.protocols.yeelight - WARNING - Yeelight command error: 'YeelightConnection' object has no attribute '_id'
+[{'success': {'/lights/1/state/xy': [0.31503795709625654, 0.544177982244455]}}]
+192.168.1.19 - - [27/Jan/2022 09:09:05] "[37mPUT /api/hueessd27f5011ec911db827ebf38830/lights/1/state HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:09:06] "[37mGET /api/af7ef5e67f5011ecbc92b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+{'ct': 247}
+2022-01-27 09:09:06,780 - lights.protocols.yeelight - WARNING - Yeelight command error: 'YeelightConnection' object has no attribute '_id'
+[{'success': {'/lights/1/state/ct': 247}}]
+192.168.1.19 - - [27/Jan/2022 09:09:06] "[37mPUT /api/hueessd27f5011ec911db827ebf38830/lights/1/state HTTP/1.1[0m" 200 -
+2022-01-27 09:09:06,955 - services.eventStreamer - DEBUG - {'creationtime': '2022-01-27T09:09:06Z', 'data': [{'id': 'a6b002a6-bcb7-5668-96f5-b9a06cc26312', 'id_v1': '/lights/1', 'metadata': {'archetype': 'sultan_bulb', 'name': 'Yeelight colorc .41'}, 'product_data': {'certified': True, 'manufacturer_name': 'Signify Netherlands B.V.', 'product_archetype': 'sultan_bulb', 'product_name': 'Hue color lamp', 'software_version': '1.90.1', 'model_id': 'LCT015'}, 'services': [{'rid': '4ed77a11-cff5-499c-b4ee-2d8698b657a0', 'rtype': 'light'}, {'rid': '63cee57d-3038-54dd-a792-479fafc0efee', 'rtype': 'zigbee_connectivity'}, {'rid': '69518d53-d667-5fda-9575-f271b047be4d', 'rtype': 'entertainment'}], 'type': 'device'}], 'id': '8d5d438d-05d4-4aad-a67e-799fc16c64b9', 'type': 'update'}
+{'ct': 180}
+2022-01-27 09:09:07,310 - lights.protocols.yeelight - WARNING - Yeelight command error: 'YeelightConnection' object has no attribute '_id'
+[{'success': {'/lights/1/state/ct': 180}}]
+192.168.1.19 - - [27/Jan/2022 09:09:07] "[37mPUT /api/hueessd27f5011ec911db827ebf38830/lights/1/state HTTP/1.1[0m" 200 -
+2022-01-27 09:09:07,456 - services.eventStreamer - DEBUG - {'creationtime': '2022-01-27T09:09:07Z', 'data': [{'id': 'a6b002a6-bcb7-5668-96f5-b9a06cc26312', 'id_v1': '/lights/1', 'metadata': {'archetype': 'sultan_bulb', 'name': 'Yeelight colorc .41'}, 'product_data': {'certified': True, 'manufacturer_name': 'Signify Netherlands B.V.', 'product_archetype': 'sultan_bulb', 'product_name': 'Hue color lamp', 'software_version': '1.90.1', 'model_id': 'LCT015'}, 'services': [{'rid': '4ed77a11-cff5-499c-b4ee-2d8698b657a0', 'rtype': 'light'}, {'rid': '63cee57d-3038-54dd-a792-479fafc0efee', 'rtype': 'zigbee_connectivity'}, {'rid': '69518d53-d667-5fda-9575-f271b047be4d', 'rtype': 'entertainment'}], 'type': 'device'}], 'id': 'a6b0e686-8095-4b3e-8b41-f53471a1c4c6', 'type': 'update'}
+{'bri': 136}
+2022-01-27 09:09:07,890 - lights.protocols.yeelight - WARNING - Yeelight command error: 'YeelightConnection' object has no attribute '_id'
+[{'success': {'/lights/1/state/bri': 136}}]
+192.168.1.19 - - [27/Jan/2022 09:09:07] "[37mPUT /api/hueessd27f5011ec911db827ebf38830/lights/1/state HTTP/1.1[0m" 200 -
+2022-01-27 09:09:07,958 - services.eventStreamer - DEBUG - {'creationtime': '2022-01-27T09:09:07Z', 'data': [{'id': 'a6b002a6-bcb7-5668-96f5-b9a06cc26312', 'id_v1': '/lights/1', 'metadata': {'archetype': 'sultan_bulb', 'name': 'Yeelight colorc .41'}, 'product_data': {'certified': True, 'manufacturer_name': 'Signify Netherlands B.V.', 'product_archetype': 'sultan_bulb', 'product_name': 'Hue color lamp', 'software_version': '1.90.1', 'model_id': 'LCT015'}, 'services': [{'rid': '4ed77a11-cff5-499c-b4ee-2d8698b657a0', 'rtype': 'light'}, {'rid': '63cee57d-3038-54dd-a792-479fafc0efee', 'rtype': 'zigbee_connectivity'}, {'rid': '69518d53-d667-5fda-9575-f271b047be4d', 'rtype': 'entertainment'}], 'type': 'device'}], 'id': '4138ad63-2ab1-4333-8092-e3a6617b8d3e', 'type': 'update'}
+192.168.1.19 - - [27/Jan/2022 09:09:08] "[37mGET /api/hueessd27f5011ec911db827ebf38830 HTTP/1.1[0m" 200 -
+{'bri': 83}
+2022-01-27 09:09:08,501 - lights.protocols.yeelight - WARNING - Yeelight command error: 'YeelightConnection' object has no attribute '_id'
+[{'success': {'/lights/1/state/bri': 83}}]
+192.168.1.19 - - [27/Jan/2022 09:09:08] "[37mPUT /api/hueessd27f5011ec911db827ebf38830/lights/1/state HTTP/1.1[0m" 200 -
+2022-01-27 09:09:08,659 - services.eventStreamer - DEBUG - {'creationtime': '2022-01-27T09:09:08Z', 'data': [{'id': 'a6b002a6-bcb7-5668-96f5-b9a06cc26312', 'id_v1': '/lights/1', 'metadata': {'archetype': 'sultan_bulb', 'name': 'Yeelight colorc .41'}, 'product_data': {'certified': True, 'manufacturer_name': 'Signify Netherlands B.V.', 'product_archetype': 'sultan_bulb', 'product_name': 'Hue color lamp', 'software_version': '1.90.1', 'model_id': 'LCT015'}, 'services': [{'rid': '4ed77a11-cff5-499c-b4ee-2d8698b657a0', 'rtype': 'light'}, {'rid': '63cee57d-3038-54dd-a792-479fafc0efee', 'rtype': 'zigbee_connectivity'}, {'rid': '69518d53-d667-5fda-9575-f271b047be4d', 'rtype': 'entertainment'}], 'type': 'device'}], 'id': 'ebe4497f-9a59-4bb3-ae3e-3b9f650323f2', 'type': 'update'}
+192.168.1.11 - - [27/Jan/2022 09:09:11] "[37mGET /api/af7ef5e67f5011ecbc92b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+2022-01-27 09:09:13,555 - services.stateFetch - INFO - start lights sync
+2022-01-27 09:09:13,556 - services.stateFetch - DEBUG - fetch Yeelight colorc .41
+2022-01-27 09:09:13,764 - services.stateFetch - WARNING - Yeelight colorc .41 is unreachable: name 'self' is not defined
+192.168.1.11 - - [27/Jan/2022 09:09:17] "[37mGET /api/af7ef5e67f5011ecbc92b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.19 - - [27/Jan/2022 09:09:18] "[37mGET /api/hueessd27f5011ec911db827ebf38830 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:09:21] "[37mGET /api/af7ef5e67f5011ecbc92b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:09:26] "[37mGET /api/af7ef5e67f5011ecbc92b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+2022-01-27 09:09:27,782 - services.stateFetch - INFO - start lights sync
+2022-01-27 09:09:27,783 - services.stateFetch - DEBUG - fetch Yeelight colorc .41
+2022-01-27 09:09:27,875 - services.stateFetch - WARNING - Yeelight colorc .41 is unreachable: name 'self' is not defined
+192.168.1.19 - - [27/Jan/2022 09:09:28] "[37mGET /api/hueessd27f5011ec911db827ebf38830 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:09:32] "[37mGET /api/af7ef5e67f5011ecbc92b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:09:36] "[37mGET /api/af7ef5e67f5011ecbc92b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.19 - - [27/Jan/2022 09:09:38] "[37mGET /api/hueessd27f5011ec911db827ebf38830 HTTP/1.1[0m" 200 -
+2022-01-27 09:09:38,888 - services.stateFetch - INFO - start lights sync
+2022-01-27 09:09:38,888 - services.stateFetch - DEBUG - fetch Yeelight colorc .41
+2022-01-27 09:09:39,294 - services.stateFetch - WARNING - Yeelight colorc .41 is unreachable: name 'self' is not defined
+192.168.1.11 - - [27/Jan/2022 09:09:42] "[37mGET /api/af7ef5e67f5011ecbc92b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:09:46] "[37mGET /api/af7ef5e67f5011ecbc92b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.19 - - [27/Jan/2022 09:09:48] "[37mGET /api/hueessd27f5011ec911db827ebf38830 HTTP/1.1[0m" 200 -
+2022-01-27 09:09:50,298 - services.stateFetch - INFO - start lights sync
+2022-01-27 09:09:50,298 - services.stateFetch - DEBUG - fetch Yeelight colorc .41
+2022-01-27 09:09:50,618 - services.stateFetch - WARNING - Yeelight colorc .41 is unreachable: name 'self' is not defined
+2022-01-27 09:09:51,117 - services.ssdp - DEBUG - Sending M-Search response to 192.168.1.18
+192.168.1.11 - - [27/Jan/2022 09:09:51] "[37mGET /api/af7ef5e67f5011ecbc92b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+2022-01-27 09:09:52,439 - services.ssdp - DEBUG - Sending M-Search response to 192.168.1.18
+2022-01-27 09:09:53,067 - services.ssdp - DEBUG - Sending M-Search response to 192.168.1.18
+2022-01-27 09:09:54,289 - services.ssdp - DEBUG - Sending M-Search response to 192.168.1.18
+192.168.1.11 - - [27/Jan/2022 09:09:57] "[37mGET /api/af7ef5e67f5011ecbc92b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+192.168.1.19 - - [27/Jan/2022 09:09:58] "[37mGET /api/hueessd27f5011ec911db827ebf38830 HTTP/1.1[0m" 200 -
+192.168.1.11 - - [27/Jan/2022 09:10:01] "[37mGET /api/af7ef5e67f5011ecbc92b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
+2022-01-27 09:10:02,633 - services.stateFetch - INFO - start lights sync
+2022-01-27 09:10:02,633 - services.stateFetch - DEBUG - fetch Yeelight colorc .41
+2022-01-27 09:10:02,900 - services.stateFetch - WARNING - Yeelight colorc .41 is unreachable: name 'self' is not defined
+192.168.1.11 - - [27/Jan/2022 09:10:07] "[37mGET /api/af7ef5e67f5011ecbc92b827ebf38830/groups/0 HTTP/1.1[0m" 200 -
